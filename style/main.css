@@ -1,0 +1,67 @@
+.Titre_vitrine {
+    font-family: "Magnolia Script Regular";
+    color :rgb(99, 178, 192);
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black; opacity: 0;
+    animation-name: fade;
+    animation-duration: 45s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+}
+.Liens_vitrine {
+    font-family: "magnolia Script Regular";
+    font-size: 20px;
+    width: 200px;
+    padding-left: 10px;
+    background: rgba(0, 183, 255, 0.301);
+    border-radius: 15px;
+    position: relative;
+    left: -220px; top: 50px;
+    transition: all .5s ease-in;
+}
+.Liens_vitrine:hover{
+    left:0;
+}
+.Liens_vitrine a.Open{
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, 0.356);
+    color: white;
+    position: absolute;
+    top: 150px; right: -76px;
+    transform: rotate(270deg);
+    border-radius: 0 0 10px 10px;
+    animation-name: hey;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.Liens_vitrine a.Open:hover{
+    animation-iteration-count: 0;
+}
+@keyframes hey {
+    0%     {right: -76px;}
+    16.66% {right: -86px;}
+    33.33% {right: -76px;}
+    49.98% {right: -86px;}
+    66.64% {right: -76px;}
+    83.3%  {right: -86px;}
+    100%   {right: -76px;}
+}
+#vitrine {
+    background-image: url("../assets/img/93135811_p0.png");
+    animation-name: back;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes back {
+    0%  {background-image: url("../assets/img/93135811_p0.png");}
+    50% {background-image: url("../assets/img/Nymelia_angel.png");}
+
+}
+@keyframes fade {
+    0% {opacity: 0}
+    33% {opacity: 1}
+    66% {opacity: 1}
+    100% {opacity: 0}
+}
