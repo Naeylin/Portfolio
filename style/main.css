@@ -1,6 +1,5 @@
 .flex_vitrine {
     display: flex;
-    align-items: center;
     height: 98vh;
     width: 99vw;
     justify-content: center;
@@ -55,14 +54,45 @@
     100% {opacity: 0}
 }
 
+/* From there : index2 customization*/
+
 .flex_container{
     display: flex;
     background-color: rgba(95, 158, 160, 0);
+    height: 98vh;
+    width: 99vw;
 }
 
-.flex_container > div{
-    background-color: cornsilk;
-    margin: 10px;
-    padding: 30px;
-    font-size: 30px;
+#flex_cont_option{
+    justify-content: center;
 }
+.flex_container > .flex_cont1{
+    background-color: cornsilk;
+    margin: 0px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 0px 0px 150px 150px;
+    align-self: flex-start;
+    width: 1500px;
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+    top: 0px;
+
+}
+
+.flex_cont1:hover{
+
+}
+
+.flex_cont1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex_cont1 > div{
+    margin:0px;
+    flex-grow: 1;
+    text-align:center;
+}
+
