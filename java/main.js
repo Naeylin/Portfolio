@@ -20,7 +20,7 @@ flex_cont1.onmouseout = function(event) {
     currentElem = null;
 }
 function onEnter(elem) {
-    elem.style.background = 'gold';
+    elem.style.background = 'transparent';
 }
 function onLeave(elem) {
     elem.style.background = 'blue';

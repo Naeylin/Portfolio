@@ -56,44 +56,37 @@
 
 /* From there : index2 customization*/
 
+body{
+    background-image: url("../assets/img/93135811_p0.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .flex_container{
     display: flex;
     background-color: rgba(95, 158, 160, 0);
     height: 98vh;
     width: 99vw;
-}
-
-#flex_cont_option{
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+
 .flex_container > #flex_cont1{
     background-color: rgb(255, 248, 220);
     margin: -8px;
     padding: 10px;
     font-size: 30px;
     border-radius: 0px 0px 150px 150px;
-    align-self: flex-start;
     width: 1500px;
     box-shadow: 0px 0px 20px 0px black;
     position: relative;
-    top: 0px;
-
-}
-/*
-.flex_cont1:hover{
-    animation-name: drop;
-    animation-iteration-count: 1;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-@keyframes drop{
-    0% {top: -50px}
-    100%{top: 0px}
-}*/
-#flex_cont1{
+    top: -20px;
+    align-self: center;
     display:flex;
     flex-direction: row;
     justify-content: center;
+    font-family: "Magnolia Script Regular";
 }
 
 #flex_cont1 > div{
@@ -102,3 +95,28 @@
     text-align:center;
 }
 
+#flex_cont_cv{
+    display : flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 99vw;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: cadetblue;
+    font-family: "Magnolia Script Regular";
+}
+
+#flex_cont_cv > h1{
+    background-color: coral;
+}
+
+#flex_cont_cv > h2{
+    background-color: darkgreen;
+}
+
+#flex_cont_cv > p{
+    background-color: darkseagreen;
+    text-align: center;
+}
