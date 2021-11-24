@@ -19,9 +19,9 @@ flex_cont1.onmouseout = function(event) {
     onLeave(currentElem);
     currentElem = null;
 }
-function onEnter(elem) {
-    elem.style.background = 'transparent';
+function onEnter() {
+    document.getElementById("flex_cont1").style.opacity = "100%";
 }
-function onLeave(elem) {
-    elem.style.background = 'blue';
+function onLeave() {
+    document.getElementById("flex_cont1").style.opacity = "0%";
 }

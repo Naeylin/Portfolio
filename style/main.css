@@ -62,10 +62,14 @@ body{
     background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .flex_container{
     display: flex;
-    background-color: rgba(95, 158, 160, 0);
-    height: 98vh;
+    background-color: rgb(95, 158, 160);
+    height: 99vh;
     width: 99vw;
     flex-direction: column;
     align-items: center;
@@ -77,22 +81,29 @@ body{
     margin: -8px;
     padding: 10px;
     font-size: 30px;
-    border-radius: 0px 0px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
     width: 1500px;
     box-shadow: 0px 0px 20px 0px black;
-    position: relative;
-    top: -20px;
+    z-index: 3;
+    position: sticky;
+    top: 0px;
     align-self: center;
     display:flex;
     flex-direction: row;
     justify-content: center;
     font-family: "Magnolia Script Regular";
+    transition: 0.5s;
 }
 
 #flex_cont1 > div{
     margin:0px;
     flex-grow: 1;
     text-align:center;
+}
+
+#flex_position {
+    display: flex;
+    flex-direction: row;
 }
 
 #flex_cont_cv{
@@ -104,8 +115,11 @@ body{
     width: 99vw;
     justify-content: flex-start;
     align-items: center;
-    background-color: cadetblue;
+    background-color: blueviolet; 
     font-family: "Magnolia Script Regular";
+    z-index: 2;
+    position: relative;
+    left: -2000px;
 }
 
 #flex_cont_cv > h1{
@@ -119,4 +133,12 @@ body{
 #flex_cont_cv > p{
     background-color: darkseagreen;
     text-align: center;
+}
+
+* {box-sizing: border-box}
+
+#flex_cont_slide{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
