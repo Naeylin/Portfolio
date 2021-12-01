@@ -57,12 +57,26 @@
 /* From there : index2 customization*/
 * {box-sizing: border-box}
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url("../assets/img/93135811_p0.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
 }
 
+@keyframes fade{
+    0% {opacity: 100%}
+    50% {opacity: 0%}
+    100% {opacity: 100%}
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -70,7 +84,7 @@ body::-webkit-scrollbar {
 .flex_container{
     display: flex;
     background-color: rgba(95, 158, 160, 0);
-    height: 99vh;
+    height: 10vh;
     width: 99vw;
     flex-direction: column;
     align-items: center;
@@ -85,7 +99,7 @@ body::-webkit-scrollbar {
     width: 1500px;
     box-shadow: 0px 0px 20px 0px black;
     z-index: 3;
-    position: sticky;
+    position: fixed;
     top: 0px;
     align-self: center;
     display:flex;
@@ -106,7 +120,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     background-color: darksalmon;
     height: 99vh;
-    width:99vw;
+    width: 200vw;
     justify-content: center;
     align-items: center;
 }
@@ -162,3 +176,4 @@ body::-webkit-scrollbar {
 img{
     vertical-align: middle;
 }
+
