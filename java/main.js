@@ -1,3 +1,5 @@
+//Parametrage navbar//
+
 let currentElem = null;
 
 flex_cont1.onmouseover = function(event) {
@@ -26,6 +28,8 @@ function onLeave() {
     document.getElementById("flex_cont1").style.opacity = "0%";
 }
 
+// parametrage slideshow//
+
 var slideIndex = 0;
 showSlides();
 
@@ -41,6 +45,23 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
-$("#a").click(function() {
-    $('.transform').toggleClass('transform-active');
-  });
+
+const poolImg =[
+    './assets/img/image1.png',
+    './assets/img/image2.png',
+    './assets/img/image3.png'
+]
+
+var randomImg = Math.floor(Math.random() * poolImg.length);
+
+function bgRandImg() {
+    document.body.style.backgroundImage = "url('"+poolImg[randomImg]+"')"
+    randomImg = Math.floor(Math.random() * poolImg.length)
+};
+
+bgRandImg()
+
+const anchorElement = document.getElementById("lien")
+
+anchorElement.addEventListener('click', bgRandImg);
+console.log(randomImg)

@@ -37,14 +37,14 @@
 }
 
 #vitrine {
-    background-image: url("../assets/img/93135811_p0.png");
+    background-image: url("../assets/img/image1.png");
     animation-name: back;
     animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 @keyframes back {
-    0%  {background-image: url("../assets/img/93135811_p0.png");}
-    50% {background-image: url("../assets/img/Nymelia_angel.png");}
+    0%  {background-image: url("../assets/img/image2.png");}
+    50% {background-image: url("../assets/img/image1.png");}
     
 }
 @keyframes fade {
@@ -62,9 +62,9 @@ html{
 }
 
 body{
-    background-image: url("../assets/img/93135811_p0.png");
+/*background-image: url("../assets/img/image1.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     overflow-x: hidden;
     animation-name: fade;
     animation-duration: 2s;
