@@ -55,6 +55,7 @@
 }
 
 /* From there : index2 customization*/
+
 * {box-sizing: border-box}
 
 html{
@@ -62,9 +63,8 @@ html{
 }
 
 body{
-/*background-image: url("../assets/img/image1.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
     overflow-x: hidden;
     animation-name: fade;
     animation-duration: 2s;
@@ -84,7 +84,7 @@ body::-webkit-scrollbar {
 .flex_container{
     display: flex;
     background-color: rgba(95, 158, 160, 0);
-    height: 10vh;
+    height: 0vh;
     width: 99vw;
     flex-direction: column;
     align-items: center;
@@ -118,35 +118,32 @@ body::-webkit-scrollbar {
 #flex_position {
     display: flex;
     flex-direction: row;
-    background-color: darksalmon;
-    height: 99vh;
+    background-color: rgba(255, 255, 255, 0.658);
+    height: 200vh;
     width: 200vw;
-    justify-content: center;
-    align-items: center;
+ 
 }
 
 #flex_cont_cv{
     display : flex;
-    justify-self: center;
-    align-self: center;
+    justify-self: flex-start;
+    align-self: flex-start;
     flex-direction: column;
-    height: 90vh;
     width: 99vw;
     justify-content: flex-start;
     align-items: center;
-    background-color: blueviolet; 
+    background-color: rgba(137, 43, 226, 0); 
     font-family: "Magnolia Script Regular";
     z-index: 2;
-    position: relative;
     left: -00px;
 }
 
 #flex_cont_cv > h1{
-    background-color: rgba(255, 127, 80, 0);
+    text-shadow: 2px 2px 5px rgb(109, 109, 109);
 }
 
 #flex_cont_cv > h2{
-    background-color: rgba(0, 100, 0, 0);
+    text-shadow : 2px 2px 5px rgb(112, 112, 112);
 }
 
 #flex_cont_cv > p{
@@ -156,7 +153,7 @@ body::-webkit-scrollbar {
 
 #flex_cont_graph{
     display: flex;
-    background-color: crimson;
+    background-color: rgba(220, 20, 60, 0);
     height: 1080px;
     width: 1920px;
     position: relative;

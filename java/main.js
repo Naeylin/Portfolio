@@ -45,6 +45,7 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
+// parametrage changement du background quand click sur un anchor navbar //
 
 const poolImg =[
     './assets/img/image1.png',
