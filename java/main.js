@@ -62,7 +62,6 @@ function bgRandImg() {
 
 bgRandImg()
 
-const anchorElement = document.getElementById("lien")
-
-anchorElement.addEventListener('click', bgRandImg);
-console.log(randomImg)
+document.getElementById("lien0").addEventListener('click', bgRandImg);
+document.getElementById("lien1").addEventListener('click', bgRandImg);
+document.getElementById("lien2").addEventListener('click', bgRandImg);
