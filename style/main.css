@@ -1,3 +1,21 @@
+a:link{
+    text-decoration:none;
+    color: purple
+}
+
+a:visited{
+    text-decoration:none;
+    color: purple
+}
+
+a:hover{
+    text-decoration:underline
+}
+
+a:active{
+    color:violet
+}
+
 .flex_vitrine {
     display: flex;
     height: 98vh;
@@ -70,6 +88,7 @@ body{
     animation-name: fade;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    transition: 1s
 
 }
 
@@ -200,4 +219,6 @@ img{
     background-color: rgba(0, 255, 255, 0);
     width : 99vw;
     justify-content: center;
+
+    font-family: "Magnolia Script Regular";
 }
