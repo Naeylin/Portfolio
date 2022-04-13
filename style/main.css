@@ -216,7 +216,7 @@ img{
 
 #flex_cont_contact{
     display: flex;
-    background-color: rgba(0, 255, 255, 0.479);
+    background-color: rgba(0, 255, 255, 0);
     width : 99vw;
     height: 99vh;
     position: relative;
