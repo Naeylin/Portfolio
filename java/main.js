@@ -64,6 +64,5 @@ bgRandImg()
 
 document.getElementById("lien0").addEventListener('click', bgRandImg);
 document.getElementById("lien1").addEventListener('click', bgRandImg);
-document.getElementById("lien2").addEventListener('click', bgRandImg);
 document.getElementById("lien3").addEventListener('click', bgRandImg);
 document.getElementById("lien4").addEventListener('click', bgRandImg);
