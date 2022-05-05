@@ -50,7 +50,11 @@ function showSlides() {
 const poolImg =[
     './assets/img/image1.png',
     './assets/img/image2.png',
-    './assets/img/image3.png'
+    './assets/img/image3.png',
+    './assets/img/image4.png',
+    './assets/img/image5.png',
+    './assets/img/image6.png',
+    './assets/img/image7.png'
 ]
 
 var randomImg = Math.floor(Math.random() * poolImg.length);
