@@ -197,6 +197,10 @@ body::-webkit-scrollbar {
     position: relative;
     margin: auto;
     justify-content: center;
+    text-align: center;
+    font-size: large;
+
+    font-family: "Magnolia Script Regular";
 }
 
 #titre_slide{
@@ -240,8 +244,9 @@ img{
 }
 /* parametrage de la box a propos */
 
-#flex_cont_contact{
+#flex_cont_veille{
     display: flex;
+    flex-direction: column;
     background-color: rgba(0, 255, 255, 0);
     width : 99vw;
     height: 99vh;
