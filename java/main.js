@@ -1,19 +1,27 @@
-  const poolImg = [
-      './assets/img/image1.png',
-      './assets/img/image2.png',
-      './assets/img/image3.png',
-      './assets/img/image4.png',
-      './assets/img/image5.png',
-      './assets/img/image6.png',
-      './assets/img/image7.png',
-  ];
+// Glass sidebar
 
-  function bgRandImg() {
-     const randomImg = Math.floor(Math.random() * poolImg.length)
-     document.body.style.backgroundImage = "url('"+poolImg[randomImg]+"')"
-  };
+const sidebar = document.querySelector('.sidebar');
+const navItems = document.querySelectorAll('nav .nav-item');
+const toggle = document.querySelector('.sidebar .toggle');
 
-  bgRandImg();
+toggle.addEventListener('click', () => {
 
-// Change the background every 5 seconds
-setInterval(bgRandImg, 3000);
+    if(sidebar.className === 'sidebar')
+        sidebar.classList.add('open');
+    else
+        sidebar.classList.remove('open');
+
+});
+
+navItems.forEach(navItem => {
+
+    navItem.addEventListener('click', () => {
+
+        navItems.forEach(navItem => {
+            navItem.classList.remove('active');
+        });
+
+        navItem.classList.add('active');
+    })
+
+})
