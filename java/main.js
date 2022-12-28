@@ -2,7 +2,7 @@
 
 const sidebar = document.querySelector('.sidebar');
 const navItems = document.querySelectorAll('nav .nav-item');
-const toggle = document.querySelector('.sidebar .toggle');
+const toggle = document.querySelector('.sidebar .toggle_nvb');
 
 toggle.addEventListener('click', () => {
 
@@ -25,3 +25,18 @@ navItems.forEach(navItem => {
     })
 
 })
+
+// Light - Dark mode
+
+const body = document.querySelector("body");
+const toggleLM = document.querySelector("#toggle");
+const sunIcon = document.querySelector(".toggle .bxs-sun");
+const moonIcon = document.querySelector(".toggle .bx-moon");
+
+toggleLM.addEventListener("change", () => {
+
+    body.classList.toggle("dark");
+    sunIcon.className = sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
+    moonIcon.className = moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
+
+});
