@@ -262,7 +262,9 @@ input {
     transform: rotateY(180deg);
 }
 
-.test {
+/* presentation specific page parameters */
+
+.presentation {
     width: 80vw;
     position: relative;
     left: 10%;
@@ -276,4 +278,39 @@ input {
 b {
     font-size: 40px;
     color: #32b4ff;
+}
+
+/* mon_cv specific page parameters */
+
+.lien_cv:link {
+    font-size: 40px;
+    text-decoration: underline;
+    color: #32b4ff;
+}
+
+.lien_cv:visited {
+    color: #32b4ff;
+}
+
+.mon_cv {
+    width: 80vw;
+    position: relative;
+    left: 10%;
+    top: 5vh;
+    border-left: 5px solid black;
+    padding: 10px;
+    font-size: 30px;
+    transition: .4s;
+}
+
+.mon_cv h1{
+    font-size: 50px;
+}
+
+.mon_cv h2{
+    font-size: 40px;
+}
+
+.mon_cv h3{
+    font-size: 30px;
 }

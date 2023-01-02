@@ -32,7 +32,7 @@ const body = document.querySelector("body");
 const toggleLM = document.querySelector("#toggle");
 const sunIcon = document.querySelector(".toggle .bxs-sun");
 const moonIcon = document.querySelector(".toggle .bx-moon");
-const test = document.getElementById('test');
+const presentation = document.getElementById('presentation');
 
 toggleLM.addEventListener("change", () => {
 
@@ -40,11 +40,11 @@ toggleLM.addEventListener("change", () => {
     sunIcon.className = sunIcon.className == "bx bxs-sun" ? "bx bx-sun" : "bx bxs-sun";
     moonIcon.className = moonIcon.className == "bx bxs-moon" ? "bx bx-moon" : "bx bxs-moon";
     
-    if(test.style.color === "black")
-        {test.style.color = "white";
-        test.style.borderColor = "white";}
+    if(presentation.style.color === "black")
+        {presentation.style.color = "white";
+        presentation.style.borderColor = "white";}
     else
-        {test.style.color = "black";
-        test.style.borderColor = "black";}
+        {presentation.style.color = "black";
+        presentation.style.borderColor = "black";}
 
 });
