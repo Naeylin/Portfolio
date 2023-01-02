@@ -12,12 +12,25 @@ body {
     transition: .2s;
 }
 
+a:link {
+    text-decoration: none;
+    font-family: "Magnolia Script";
+    font-size: 18px;
+    color: #fff;
+}
+
+a:visited{
+    text-decoration:none;
+    color: #fff;
+}
+
 /* Light - Dark mode */
 
 .toggle {
     cursor: pointer;
-    position: relative;
-    left: 800px;
+    position: fixed;
+    top: 20px;
+    left: 92%;
     display: flex;
     justify-content: space-between;
     width: 120px;
@@ -47,7 +60,7 @@ input {
     display: none;
 }
 
-/* Light mode */
+/* Light mode side */
 
 .light {
     background: #fafafa;
@@ -70,7 +83,7 @@ input {
     background: #151d2a;
 }
 
-/* Dark mode */
+/* Dark mode side */
 
 .dark {
     background: #151d2a;
@@ -180,7 +193,7 @@ input {
 }
 
 .sidebar nav .nav-item.active {
-    background: #ff328e !important;
+    background: #32b4ff !important;
 }
 
 .sidebar nav .nav-item:hover {
@@ -247,4 +260,20 @@ input {
 
 .sidebar.open .toggle_nvb i {
     transform: rotateY(180deg);
+}
+
+.test {
+    width: 80vw;
+    position: relative;
+    left: 10%;
+    top: 30vh;
+    border-left: 5px solid black;
+    padding: 10px;
+    font-size: 30px;
+    transition: .4s;
+}
+
+b {
+    font-size: 40px;
+    color: #32b4ff;
 }
