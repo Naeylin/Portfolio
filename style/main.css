@@ -148,7 +148,6 @@ input {
 
 .sidebar .logo h3 {
     color: #fff;
-    font-size: 36px;
     margin-top: 12px;
     pointer-events: none;
     scale: 0;
@@ -156,6 +155,7 @@ input {
 }
 
 .sidebar.open .logo h3{
+    font-size: 36px;
     scale: 1;
     opacity: 1;
     transition: .4s;
