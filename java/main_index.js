@@ -1,3 +1,5 @@
+// Random background changer
+
 const poolImg = [
   './assets/img/image1.png',
   './assets/img/image2.png',

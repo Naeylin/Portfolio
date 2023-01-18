@@ -30,7 +30,7 @@ a:visited{
     cursor: pointer;
     position: fixed;
     top: 20px;
-    left: 92%;
+    left: 93%;
     display: flex;
     justify-content: space-between;
     width: 120px;
@@ -63,7 +63,10 @@ input {
 /* Light mode side */
 
 .light {
-    background: #fafafa;
+    /* background: #fafafa; */
+    background-image: url(../assets/img/background2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .light .toggle {
@@ -86,7 +89,10 @@ input {
 /* Dark mode side */
 
 .dark {
-    background: #151d2a;
+    /* background: #151d2a; */
+    background-image: url(../assets/img/background1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .dark .toggle {
@@ -270,6 +276,7 @@ input {
     left: 10%;
     top: 30vh;
     border-left: 5px solid black;
+    backdrop-filter: blur(20px);
     padding: 10px;
     font-size: 30px;
     transition: .4s;
@@ -277,7 +284,6 @@ input {
 
 b {
     font-size: 40px;
-    color: #32b4ff;
 }
 
 /* mon_cv specific page parameters */
@@ -285,11 +291,11 @@ b {
 .lien_cv:link {
     font-size: 40px;
     text-decoration: underline;
-    color: #32b4ff;
+    color: #003470;
 }
 
 .lien_cv:visited {
-    color: #32b4ff;
+    color: #003470;
 }
 
 .mon_cv {
@@ -298,6 +304,7 @@ b {
     left: 10%;
     top: 5vh;
     border-left: 5px solid black;
+    backdrop-filter: blur(20px);
     padding: 10px;
     font-size: 30px;
     transition: .4s;
